@@ -83,5 +83,13 @@ function greeting( obj ) {
 //Find the longest array and return that array. 
 
 function numberGroups({a, b, c}){
-  return 
+  if (a.length > b.length && a.length > c.length){
+    return a;
+  } 
+  if (b.length > a.length && b.length > c.length){
+    return b;
+  }
+  else{
+    return c;
+  }
 }
