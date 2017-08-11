@@ -24,6 +24,7 @@ function greeting( obj ) {
   var {firstName, lastName, title} = obj;
   
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
+  // `Hello ${title} ${firstName} ${lastName}` ======= Template Literals
 }
 
 

@@ -21,7 +21,17 @@ Each employee can:
 
 call your class Employee and receive all the data in the constructor in the order listed
 */
-
+class Employee {
+    constructor(first_name, last_name, email, age) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.email = email;
+        this.age = age
+    }
+    makeWidget(first_name, last_name){
+        return this.first_name + ' ' + this.last_name + ' Widget';
+    }
+}
 
 
 /*
@@ -36,12 +46,25 @@ They can (methods) :
         : Hire adds a new employee to their list of reports
    - fire(index)
         : Fire removes employees from their list of reports at the given index
-
-call your class Manager
-
 */
 
-
+class Manager {
+    constructor(first_name, last_name, email, age) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.email = email;
+        this.age = age
+    }
+    reports() {
+        return [];
+    }
+    hire(Employee) {
+        return reports.push(Employee);
+    }
+    fire(Employee) {
+        return reports.splice(Employee, 1)
+    }
+}
 
 
 
